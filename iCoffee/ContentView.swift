@@ -10,9 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject var drinkListener = DrinkListener()
+    
     var categories: [String : [Drink] ] {
         .init(
-            grouping: drinkData,
+            grouping: drinkListener.drinks,
             by: { $0.category.rawValue}
         )
     }
@@ -29,20 +31,20 @@ struct ContentView: View {
             }
             
             
-                .navigationBarTitle(Text("iCoffee"))
-                .navigationBarItems(leading:
-                    Button(action: {
-                        print("log out")
-                    }, label: {
-                        Text("Log Out")
-                    })
-                    , trailing:
-                    Button(action: {
-                        print("basket")
-                    }, label: {
-                        Image("basket")
-                    })
-                )
+            .navigationBarTitle(Text("iCoffee"))
+            .navigationBarItems(leading:
+                Button(action: {
+                    print("log out")
+                }, label: {
+                    Text("Log Out")
+                })
+                , trailing:
+                Button(action: {
+                    print("basket")
+                }, label: {
+                    Image("basket")
+                })
+            )
         }
     }
 }
