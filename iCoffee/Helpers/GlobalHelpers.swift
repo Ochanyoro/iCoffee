@@ -11,6 +11,7 @@ import SwiftUI
 
 let drinkData = [
     //HOT
+
     Drink(id: UUID().uuidString, name: "Espresso", imageName: "espresso", category: Category.hot, description: "Espresso is the purest distillation of the coffee bean. It doesn’t refer to a bean or blend, but actually the preparation method.", price: 2.50),
     
     Drink(id: UUID().uuidString, name: "Americano", imageName: "americano", category: Category.hot, description: "An Americano Coffee is an Espresso-based coffee drink with no special additions. Actually it is a shot of Espresso with hot water poured in it. A well-prepared Americano has the subtle aroma and flavour like Espresso. Benefits of Americano Coffee it has a lighter body and less bitterness.", price: 2.00),
