@@ -32,20 +32,20 @@ struct Drink: Identifiable, Hashable{
 func drinkDictionaryFrom(drink: Drink) -> [String : Any] {
     
     
-    return NSDictionary(object: [drink.id,
+    return NSDictionary(objects: [drink.id,
                                  drink.name,
                                  drink.imageName,
                                  drink.category.rawValue,
                                  drink.description,
                                  drink.price
-                                ], forKey: [
+                                ], forKeys: [
                                     kID as NSCopying,
                                     kNAME as NSCopying,
                                     kIMAGENAME as NSCopying,
                                     kCATEGORY as NSCopying,
                                     kDESCRIPTION as NSCopying,
                                     kPRICE as NSCopying
-                                ] as NSCopying) as! [String : Any]
+                                ]) as! [String : Any]
 }
 
 func createMenu() {

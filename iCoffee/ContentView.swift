@@ -10,8 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            Text("Hi")
+            
+                .navigationBarTitle(Text("iCoffee"))
+                .navigationBarItems(leading:
+                    Button(action: {
+                        print("log out")
+                    }, label: {
+                        Text("Log Out")
+                    })
+                    , trailing:
+                    Button(action: {
+                        print("basket")
+                    }, label: {
+                        Image("basket")
+                    })
+                )
+        }
     }
 }
 
