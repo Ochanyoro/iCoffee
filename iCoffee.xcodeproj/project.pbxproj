@@ -23,6 +23,8 @@
 		8248C453287FB31100CE9A6C /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C452287FB31100CE9A6C /* GlobalHelpers.swift */; };
 		8248C455287FB96300CE9A6C /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C454287FB96300CE9A6C /* FirebaseReference.swift */; };
 		8248C457287FBA4B00CE9A6C /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C456287FBA4B00CE9A6C /* Constans.swift */; };
+		8248C45A28806DD500CE9A6C /* DrinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C45928806DD500CE9A6C /* DrinkRow.swift */; };
+		8248C45C2880701400CE9A6C /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C45B2880701400CE9A6C /* DrinkItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		8248C452287FB31100CE9A6C /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		8248C454287FB96300CE9A6C /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		8248C456287FBA4B00CE9A6C /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		8248C45928806DD500CE9A6C /* DrinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRow.swift; sourceTree = "<group>"; };
+		8248C45B2880701400CE9A6C /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		8248C42E287FA93C00CE9A6C /* iCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				8248C45D2880724B00CE9A6C /* View */,
 				8248C43D287FABFD00CE9A6C /* GoogleService-Info.plist */,
 				8248C451287FB2EE00CE9A6C /* Helpers */,
 				8248C450287FB26500CE9A6C /* Model */,
@@ -110,6 +115,23 @@
 				8248C452287FB31100CE9A6C /* GlobalHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8248C45D2880724B00CE9A6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8248C45E2880726C00CE9A6C /* SubViews */,
+				8248C45928806DD500CE9A6C /* DrinkRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8248C45E2880726C00CE9A6C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8248C45B2880701400CE9A6C /* DrinkItem.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8248C455287FB96300CE9A6C /* FirebaseReference.swift in Sources */,
+				8248C45C2880701400CE9A6C /* DrinkItem.swift in Sources */,
 				8248C432287FA93C00CE9A6C /* ContentView.swift in Sources */,
+				8248C45A28806DD500CE9A6C /* DrinkRow.swift in Sources */,
 				8248C457287FBA4B00CE9A6C /* Constans.swift in Sources */,
 				8248C44F287FB1E200CE9A6C /* Drink.swift in Sources */,
 				8248C453287FB31100CE9A6C /* GlobalHelpers.swift in Sources */,
