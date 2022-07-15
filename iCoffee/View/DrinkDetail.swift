@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DrinkDetail: View {
     
+    @State private var showingAlert = false
+    
     var drink: Drink
     
     var body: some View {
@@ -47,8 +49,8 @@ struct DrinkDetail: View {
             
             HStack {
                 Spacer()
-                
-                OrderButton(drink: self.drink)
+
+                OrderButton(showAlert: $showingAlert, drink: self.drink)
                 
                 Spacer()
 
@@ -57,7 +59,10 @@ struct DrinkDetail: View {
             
         }
         .edgesIgnoringSafeArea(.top)
-        .navigationBarHidden(true)
+        .navigationBarTitle("iCoffee")
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Added to Backet!"), dismissButton: .default(Text("OK")))
+        }
     }
 }
 
@@ -69,12 +74,15 @@ struct DrinkDetail_Previews: PreviewProvider {
 
 struct OrderButton: View {
     
+    @Binding var showAlert: Bool
+    
     var drink: Drink
     
     var body: some View {
         
         Button {
-            print("Add to basket, \(drink.name)")
+            self.showAlert.toggle()
+            self.addItemToBasket()
         } label: {
             Text("Add to basket")
         }
@@ -84,5 +92,16 @@ struct OrderButton: View {
         .background(Color.blue)
         .cornerRadius(10)
 
+    }
+    
+    private func addItemToBasket() {
+        
+        var orderBasket: OrderBasket!
+        
+        orderBasket = OrderBasket()
+        orderBasket.ownerID = "123"
+        orderBasket.id = UUID().uuidString
+        orderBasket.add(self.drink)
+        orderBasket.saveBasketToFirebase()
     }
 }
