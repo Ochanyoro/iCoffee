@@ -22,6 +22,14 @@ class BasketListener: ObservableObject {
             
             if !snapshot.isEmpty {
                 let basketData = snapshot.documents.first!.data()
+                
+                getDrinksFromFirestore(withIds: basketData[kDRINKIDS] as? [String] ?? []) { allDrinks in
+                    let basket = OrderBasket()
+                    basket.ownerID = basketData[kOWNERID] as? String
+                    basket.id = basketData[kID] as? String
+                    basket.items = allDrinks
+                    self.orderBasket = basket
+                }
             }
         }
     }
