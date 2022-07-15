@@ -29,6 +29,7 @@
 		8248C4632880E4A500CE9A6C /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C4622880E4A500CE9A6C /* DrinkDetail.swift */; };
 		8248C4652880F57A00CE9A6C /* OrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C4642880F57A00CE9A6C /* OrderBasket.swift */; };
 		8248C4672881061F00CE9A6C /* BasketListner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C4662881061F00CE9A6C /* BasketListner.swift */; };
+		8248C4692881859A00CE9A6C /* OrderBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C4682881859A00CE9A6C /* OrderBasketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8248C4622880E4A500CE9A6C /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 		8248C4642880F57A00CE9A6C /* OrderBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasket.swift; sourceTree = "<group>"; };
 		8248C4662881061F00CE9A6C /* BasketListner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketListner.swift; sourceTree = "<group>"; };
+		8248C4682881859A00CE9A6C /* OrderBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				8248C45E2880726C00CE9A6C /* SubViews */,
 				8248C45928806DD500CE9A6C /* DrinkRow.swift */,
 				8248C4622880E4A500CE9A6C /* DrinkDetail.swift */,
+				8248C4682881859A00CE9A6C /* OrderBasketView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				8248C45C2880701400CE9A6C /* DrinkItem.swift in Sources */,
 				8248C432287FA93C00CE9A6C /* ContentView.swift in Sources */,
 				8248C45A28806DD500CE9A6C /* DrinkRow.swift in Sources */,
+				8248C4692881859A00CE9A6C /* OrderBasketView.swift in Sources */,
 				8248C46028807ADC00CE9A6C /* DrinkListener.swift in Sources */,
 				8248C457287FBA4B00CE9A6C /* Constans.swift in Sources */,
 				8248C44F287FB1E200CE9A6C /* Drink.swift in Sources */,
