@@ -26,6 +26,7 @@
 		8248C45A28806DD500CE9A6C /* DrinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C45928806DD500CE9A6C /* DrinkRow.swift */; };
 		8248C45C2880701400CE9A6C /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C45B2880701400CE9A6C /* DrinkItem.swift */; };
 		8248C46028807ADC00CE9A6C /* DrinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C45F28807ADC00CE9A6C /* DrinkListener.swift */; };
+		8248C4632880E4A500CE9A6C /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C4622880E4A500CE9A6C /* DrinkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8248C45928806DD500CE9A6C /* DrinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRow.swift; sourceTree = "<group>"; };
 		8248C45B2880701400CE9A6C /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 		8248C45F28807ADC00CE9A6C /* DrinkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListener.swift; sourceTree = "<group>"; };
+		8248C4622880E4A500CE9A6C /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				8248C45E2880726C00CE9A6C /* SubViews */,
 				8248C45928806DD500CE9A6C /* DrinkRow.swift */,
+				8248C4622880E4A500CE9A6C /* DrinkDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				8248C46028807ADC00CE9A6C /* DrinkListener.swift in Sources */,
 				8248C457287FBA4B00CE9A6C /* Constans.swift in Sources */,
 				8248C44F287FB1E200CE9A6C /* Drink.swift in Sources */,
+				8248C4632880E4A500CE9A6C /* DrinkDetail.swift in Sources */,
 				8248C453287FB31100CE9A6C /* GlobalHelpers.swift in Sources */,
 				8248C430287FA93C00CE9A6C /* iCoffeeApp.swift in Sources */,
 			);
