@@ -21,16 +21,18 @@ struct OrderBasketView: View {
                             
                             Spacer()
                             
-                            Text("\(drink.price)")
+                            Text("\(drink.price.clean) $")
                         }
                     }
                     .onDelete { (indexSet) in
-                        print("Delete at \(indexSet)")
+                        self.deleteItems(at: indexSet)
                     }
                 }
                 
                 Section {
-                    Text("Place Order")
+                    NavigationLink(destination: ContentView()) {
+                        Text("Place Order")
+                    }
                 }
                 .disabled(self.basketListener.orderBasket?.items.isEmpty ?? true)
             }
@@ -38,6 +40,13 @@ struct OrderBasketView: View {
             .listStyle(GroupedListStyle())
         }
     }
+    
+    
+    func deleteItems(at offsets: IndexSet) {
+        self.basketListener.orderBasket.items.remove(at: offsets.first!)
+        self.basketListener.orderBasket.saveBasketToFirebase()
+    }
+    
 }
 
 struct OrderBasketView_Previews: PreviewProvider {
