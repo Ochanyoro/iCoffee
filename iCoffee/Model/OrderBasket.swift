@@ -33,8 +33,8 @@ class OrderBasket: Identifiable {
     }
     
     func emptyBasket() {
-        saveBasketToFirebase()
         self.items = []
+        saveBasketToFirebase()
     }
     
     func saveBasketToFirebase() {
