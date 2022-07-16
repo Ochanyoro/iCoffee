@@ -33,6 +33,7 @@
 		8248C46B288194CD00CE9A6C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C46A288194CD00CE9A6C /* Extensions.swift */; };
 		8248C46D28823CF600CE9A6C /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C46C28823CF600CE9A6C /* CheckoutView.swift */; };
 		8248C46F2882500D00CE9A6C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C46E2882500D00CE9A6C /* Order.swift */; };
+		8248C4712882551800CE9A6C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248C4702882551800CE9A6C /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		8248C46A288194CD00CE9A6C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8248C46C28823CF600CE9A6C /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		8248C46E2882500D00CE9A6C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		8248C4702882551800CE9A6C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				8248C4622880E4A500CE9A6C /* DrinkDetail.swift */,
 				8248C4682881859A00CE9A6C /* OrderBasketView.swift */,
 				8248C46C28823CF600CE9A6C /* CheckoutView.swift */,
+				8248C4702882551800CE9A6C /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				8248C4692881859A00CE9A6C /* OrderBasketView.swift in Sources */,
 				8248C46028807ADC00CE9A6C /* DrinkListener.swift in Sources */,
 				8248C457287FBA4B00CE9A6C /* Constans.swift in Sources */,
+				8248C4712882551800CE9A6C /* LoginView.swift in Sources */,
 				8248C44F287FB1E200CE9A6C /* Drink.swift in Sources */,
 				8248C4632880E4A500CE9A6C /* DrinkDetail.swift in Sources */,
 				8248C4672881061F00CE9A6C /* BasketListner.swift in Sources */,
