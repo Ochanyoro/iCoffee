@@ -35,7 +35,9 @@ struct ContentView: View {
             .navigationBarTitle(Text("iCoffee"))
             .navigationBarItems(leading:
                 Button(action: {
-                    print("log out")
+                FUser.logOutCurrenUser { error in
+                    print("error loging out use,", error?.localizedDescription)
+                }
                 }, label: {
                     Text("Log Out")
                 })

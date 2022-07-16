@@ -65,7 +65,7 @@ struct CheckoutView: View {
         let order = Order()
         order.amount = totalPrice
         order.id = UUID().uuidString
-        order.customerID = "123"
+        order.customerID = FUser.currentId()
         order.orderItems = self.basketListener.orderBasket.items
         
         order.saveOrderToFirebase()

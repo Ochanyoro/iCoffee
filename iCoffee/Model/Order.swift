@@ -14,6 +14,8 @@ class Order: Identifiable {
     var customerID: String!
     var orderItems: [Drink] = []
     var amount: Double!
+    var customerName: String!
+    var isCompleted: Bool!
     
     func saveOrderToFirebase(){
         FirebaseReference(.Order).document(self.id).setData(orderDictionaryFromOrder(self)) { error in
@@ -37,11 +39,15 @@ func orderDictionaryFromOrder(_ order: Order) -> [String : Any] {
         order.id,
         order.customerID,
         allDrinkIds,
-        order.amount
+        order.amount,
+        order.customerName,
+        order.isCompleted
     ], forKeys: [
         kID as NSCopying,
         kCUSTOMERID as NSCopying,
         kDRINKIDS as NSCopying,
-        kAMOUNT as NSCopying
+        kAMOUNT as NSCopying,
+        kCUSTOMERNAME as NSCopying,
+        kISCOMPLETED as NSCopying
     ]) as! [String : Any]
 }

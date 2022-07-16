@@ -39,7 +39,7 @@ class FUser {
         onBoarding = false
     }
     
-    /*
+    
     init(_ dictionary : NSDictionary) {
         
         id = dictionary[kID] as? String ?? ""
@@ -52,7 +52,6 @@ class FUser {
         phoneNumber = dictionary[kPHONENUMBER] as? String ?? ""
         onBoarding = dictionary[kONBOARD] as? Bool ?? false
     }
-     */
     
     
     class func currentId() -> String {
@@ -63,7 +62,7 @@ class FUser {
         
         if Auth.auth().currentUser != nil {
             if let dictionary = userDefaults.object(forKey: kCURRENTUSER) {
-                return nil
+                return FUser.init(dictionary as! NSDictionary)
 
             }
         }

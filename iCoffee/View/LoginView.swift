@@ -73,7 +73,7 @@ struct LoginView: View {
                     
                     Button(action: {
                         
-                        //self.resetPassword()
+                        self.resetPassword()
                     }, label: {
                         Text("Forgot Password?")
                             .foregroundColor(Color.gray.opacity(0.5))
@@ -158,7 +158,7 @@ struct LoginView: View {
         
     }
     
-    /*
+    
     private func resetPassword() {
         
         if email != "" {
@@ -178,7 +178,7 @@ struct LoginView: View {
         }
         
     }
-     */
+    
 }
 
 struct LoginView_Previews: PreviewProvider {
