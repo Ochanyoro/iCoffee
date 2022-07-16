@@ -38,7 +38,7 @@ struct FinishRegistrationView: View {
             Section() {
                 
                 Button(action: {
-                    //self.finishRegistration()
+                    self.finishRegistration()
                 }, label: {
                     Text("Finish Registration")
                 })
@@ -54,12 +54,13 @@ struct FinishRegistrationView: View {
         
         return self.name != "" && self.surname != "" && self.telephone != "" && self.address != ""
     }
-    /*
+    
+    
     private func finishRegistration() {
         
         let fullName = name + " " + surname
         
-        updateCurrentUser(withValues: [kFIRSTNAME : name, kLASTNAME : surname, kFULLNAME : fullName, kFULLADDRESS : address, kPHONENUMBER : telephone, kONBOARD : true]) { (error) in
+        updateCurrentUser(withValues: [kFIRSTNAME : name, kLASTNAME : surname, kDFULLNAME : fullName, kFULLADDRESS : address, kPHONENUMBER : telephone, kONBOARD : true]) { (error) in
             
             if error != nil {
                 
@@ -70,7 +71,6 @@ struct FinishRegistrationView: View {
             self.presentationMode.wrappedValue.dismiss()
         }
     }
-     */
 }
 
 struct FinishRegistrationView_Previews: PreviewProvider {
